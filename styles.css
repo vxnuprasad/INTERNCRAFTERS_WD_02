@@ -1,0 +1,185 @@
+ /* General Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #1c1c1e;
+    --primary-color: #ff8c00;
+    --white: #ffffff;
+    --button-green: #28a745;
+    --button-orange: #dc3545;
+    --footer-color: #2e2e2e;
+    --footer-text: #c5c5c5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background-color: var(--footer-color);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.header .logo__text {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.header .social-icons a {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header .social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* Stopwatch Section */
+.stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+
+.stopwatch__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 90%;
+}
+
+/* Lap Section */
+.stopwatch__laps {
+    width: 25%;
+    background-color: var(--footer-color);
+    border-radius: 15px;
+    padding: 20px;
+    color: var(--white);
+    text-align: center;
+}
+
+.stopwatch__laps h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+#lapList {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#lapList li {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: var(--white);
+}
+
+/* Timer Section */
+.stopwatch__timer {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.stopwatch__display {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.stopwatch__controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-start {
+    background-color: var(--button-green);
+    color: var(--white);
+}
+
+.btn-start:hover {
+    background-color: #45a045;
+    transform: scale(1.05);
+}
+
+.btn-reset {
+    background-color: var(--button-orange);
+    color: var(--white);
+}
+
+.btn-reset:hover {
+    background-color: #e6392c;
+    transform: scale(1.05);
+}
+
+.btn-lap {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-lap:hover {
+    background-color: #ff7a00;
+    transform: scale(1.05);
+}
+
+/* Hourglass Image */
+.stopwatch__image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--footer-text);
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+.footer__copy {
+    font-size: 0.8rem;
+    color: var(--footer-text);
+}

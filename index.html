@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeSnap</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo__text">TimeSnap</div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/__.v.shnu/"><i class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/vxnuprasad"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/vxnuprasad"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </header>
+
+    <!-- Stopwatch -->
+    <div class="stopwatch">
+        <div class="stopwatch__container">
+            <!-- Hourglass Image -->
+            <img src="home.png" alt="home" class="stopwatch__image">
+
+            <!-- Timer Section -->
+            <div class="stopwatch__timer">
+                <div class="stopwatch__display" id="timeDisplay">00:00.00</div>
+                <div class="stopwatch__controls">
+                    <button class="btn btn-start" id="startPauseBtn">Start</button>
+                    <button class="btn btn-reset" id="resetBtn">Reset</button>
+                    <button class="btn btn-lap" id="lapBtn">Lap</button>
+                </div>
+            </div>
+
+            <!-- Laps Section -->
+            <div class="stopwatch__laps">
+                <h3>LAP</h3>
+                <ul id="lapList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__copy">&#169; INTERNCRAFTERS_WD_02. All rights reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
