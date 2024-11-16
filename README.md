@@ -39,7 +39,7 @@ This project is a feature-rich, interactive **Stopwatch Web Application** built 
 
 ### Clone the Repository:
 ```sh
-git clone https://github.com/techno-rabit/INTERNCRAFTERS_STOPWATCH_APP
+git clone https://github.com/vxnuprasad/INTERNCRAFTERS_WD_02
 ```
 
 ### Open in Browser:
